@@ -279,8 +279,8 @@ class OpenAIService:
                 "Additional feedback",
                 key=f"text_{chat_id}",
             )
-            submit = st.form_submit_button("Submit", key=f"submit_{chat_id}")
-            cancel = st.form_submit_button("Cancel", key=f"cancel_{chat_id}")
+            submit = st.form_submit_button("Submit")
+            cancel = st.form_submit_button("Cancel")
 
         if submit:
             self.db.update(
