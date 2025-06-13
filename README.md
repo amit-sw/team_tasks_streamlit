@@ -128,6 +128,7 @@ cd lambda_package && zip -r ../lambda-api.zip .
 ```
 
 Upload `lambda-api.zip` to AWS Lambda using the Python 3.11 runtime and set the environment variables above. Attach `handler.handler` to paths under `/tasks` and `ai_handler.handler` to the `/chat` path in an API Gateway HTTP API.
+See `documentation/aws_lambda_deployment.md` for a detailed walkthrough of these steps.
 
 
 ## License
